@@ -4,6 +4,22 @@ body {
   font-family: "Exo 2";
 }
 
+.ipp-speakers-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.ipp-speakers-image64x64 img {
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+}
+
+section .title span{
+    border-bottom: 3px solid #e50050;
+}
+
 .ipp-event-partners figure img {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
