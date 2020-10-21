@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="has-navbar-fixed-top" style="padding-top: 76px">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-    <!--<link rel="stylesheet" type="text/css" href="css/menu.css" media="all">-->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -42,13 +41,16 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
     <!--<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
         <script src="js/tooltipster/jquery.tooltipster.min.js"></script>
         <script src="js/tooltipster/tooltipster.script.js"></script>
         <link rel="stylesheet" href="js/tooltipster/jquery.tooltipster.css">-->
   </head>
 
-  <body style="background: #fff; line-height: 1.6em; font-family: 'Exo 2'">
+  <body>
     <!---------------------------------- Main Menu -------------------------------------------->
     <nav
       class="navbar is-fixed-top pt-3 pb-3"
@@ -57,7 +59,7 @@
     >
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" style="padding: 0" href="https://bulma.io">
+          <a class="navbar-item" style="padding: 0" href="/">
             <img
               style="max-height: 3rem"
               src="images/logo.svg"
@@ -80,15 +82,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
-            <a href="/" class="navbar-item"> Home </a>
+            <a href="/" class="navbar-item"> Início </a>
 
-            <a href="#about" class="navbar-item"> About Us </a>
+            <a href="#about" class="navbar-item"> VII Diálogo Estratégico </a>
 
-            <a href="#speakers" class="navbar-item"> Speakers </a>
+            <a href="#speakers" class="navbar-item"> Oradores </a>
 
-            <a href="#sessions" class="navbar-item"> Sessions </a>
+            <a href="#sessions" class="navbar-item"> Programa </a>
 
-            <a href="#partners" class="navbar-item"> Partners </a>
+            <a href="#partners" class="navbar-item"> Parceiros </a>
 
             <a
               href="http://www.institutopedropires.org/contactos.php"
@@ -106,7 +108,7 @@
     <section
       class="hero"
       style="
-        background-image: url(https://theafricasoftpowerproject.com/wp-content/uploads/2020/08/bg2.png);
+        background-image: url(/images/hero_background.png);
         background-color: rgba(1, 19, 34, 1);
         background-size: cover;
         background-position: center;
@@ -115,8 +117,8 @@
       "
     >
       <div class="hero-body" style="height: calc(100vh - 76px)">
-        <div class="container pt-6 pb-6">
-          <h2 class="subtitle" style="color: #3ea2e0; margin-top: 80px">
+        <div class="container pt-6 pb-6" style="display: none;">
+          <h2 class="subtitle" style="color: #3ea2e0; margin-top: 80px;">
             VII Diálogo Estratégico
           </h2>
           <h1
@@ -135,18 +137,18 @@
             paradoxais de identidade? E porquê debater estas questões (tão
             sensíveis!)?
           </h2>
-          <button class="button is-link is-inverted is-outlined">
+          <a class="button is-link is-inverted is-outlined">
             Assistir Agora
-          </button>
+          </a>
         </div>
       </div>
     </section>
 
-    <!---------------------------------- About Us Section ------------------------------------->
+    <!---------------------------------- About Section ------------------------------------->
     <section id="about" class="section">
       <div class="container pt-6 pb-6 has-text-centered">
         <h1 class="title pb-3" style="font-size: 40px; letter-spacing: -1.5px">
-          About Us
+            VII Diálogo Estratégico
         </h1>
         <h2 class="subtitle">
           <p>
@@ -217,140 +219,152 @@
       </div>
     </section>
 
-    <!---------------------------------- Speakers Section ------------------------------------->
-    <section id="speakers" class="section" style="background-color: #f1f1f1">
+     <!---------------------------------- Speakers Section ------------------------------------->
+     <section id="speakers" class="section" style="background-color: #f1f1f1">
+        <div class="container pt-6 pb-6 has-text-centered">
+          <h2 class="subtitle" style="color: #3ea2e0">Conheça os</h2>
+          <h1
+            class="title pb-3 mb-6"
+            style="font-size: 40px; letter-spacing: -1.5px"
+          >
+            Oradores
+          </h1>
+          <div class="columns mt-6">
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-square"
+                  src="images/speakers/pic_beatriz_gomes.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_bruno_sena_martins.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_cesar_schofield.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_mamadou_ba.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="columns mt-6">
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_beatriz_gomes.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_bruno_sena_martins.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_cesar_schofield.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img
+                  class="is-rounded"
+                  src="images/speakers/pic_mamadou_ba.jpg"
+                />
+              </figure>
+              <p>
+                <strong>Bruno Sena Martins</strong><br />
+                <span class="has-text-grey"
+                  >Investigador<br />
+                  Centro de Estudos Sociais da Universidade de Coimbra</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!---------------------------------- Moderators Section ------------------------------------->
+    <section id="speakers" class="section">
       <div class="container pt-6 pb-6 has-text-centered">
-        <h2 class="subtitle" style="color: #3ea2e0">Meet the</h2>
         <h1
           class="title pb-3 mb-6"
           style="font-size: 40px; letter-spacing: -1.5px"
         >
-          Speakers
+          Moderadores
         </h1>
-        <div class="columns mt-6">
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_beatriz_gomes.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_bruno_sena_martins.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_cesar_schofield.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_mamadou_ba.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-        </div>
-        <div class="columns mt-6">
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_beatriz_gomes.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_bruno_sena_martins.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_cesar_schofield.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-          <div class="column">
-            <figure class="image is-128x128" style="margin: 0 auto">
-              <img
-                class="is-rounded"
-                src="images/speakers/pic_mamadou_ba.jpg"
-              />
-            </figure>
-            <p>
-              <strong>Bruno Sena Martins</strong><br />
-              <span class="has-text-grey"
-                >Investigador<br />
-                Centro de Estudos Sociais da Universidade de Coimbra</span
-              >
-            </p>
-          </div>
-        </div>
         <div class="columns mt-6">
           <div class="column">
             <figure class="image is-128x128" style="margin: 0 auto">
@@ -387,7 +401,7 @@
     </section>
 
     <!---------------------------------- Session Section ------------------------------------->
-    <section id="sessions" class="section">
+    <section id="sessions" class="section" style="background-color: #f1f1f1">
       <div class="container pt-6 pb-6">
         <h2 class="subtitle has-text-centered" style="color: #3ea2e0">
           Join a
@@ -401,7 +415,7 @@
         <div class="columns">
           <div class="column">
             <div>
-              <h2 class="subtitle">Dia 1 - 29 de Outubro (quinta-feira)</h2>
+              <h2 class="subtitle"><b>Dia 1 - 29 de Outubro (quinta-feira)</b></h2>
               <div class="media">
                 <div class="media-left">16h00</div>
                 <div class="media-content">
@@ -433,7 +447,7 @@
                         </div>
                         <div class="level-item">
                           <p>
-                            <strong>Pedro Pires,</strong><br/>
+                            <strong>Pedro Pires</strong><br/>
                             <small>Patrono do IPP</small>
                           </p>
                         </div>
@@ -465,7 +479,7 @@
                         </div>
                         <div class="level-item">
                           <p>
-                            <strong>Bruno Sena Martins,</strong
+                            <strong>Bruno Sena Martins</strong
                             ><br />
                             <small
                               >Investigador | Centro de Estudos Sociais da
@@ -488,7 +502,7 @@
                         </div>
                         <div class="level-item">
                           <p>
-                            <strong>Beatriz Dias,</strong><br />
+                            <strong>Beatriz Dias</strong><br />
                             <small
                               >Deputada pelo Bloco de Esquerda na Assembleia da
                               República Portuguesa</small
@@ -509,7 +523,7 @@
                         </div>
                         <div class="level-item">
                           <p>
-                            <strong>Mamadou Ba,</strong><br />
+                            <strong>Mamadou Ba</strong><br />
                             <small
                               >Ativista e militante anti-racista
                               decolonial</small
@@ -530,7 +544,7 @@
                         </div>
                         <div class="level-item">
                           <p>
-                            <strong>Ricardo Rosa,</strong><br />
+                            <strong>Ricardo Rosa</strong><br />
                             <small
                               >Activista Social e Professor Universitário |
                               University of Massachusetts Dartmouth</small
@@ -551,7 +565,7 @@
                         </div>
                         <div class="level-item">
                           <p>
-                            <strong>César Schofield Cardoso,</strong
+                            <strong>César Schofield Cardoso</strong
                             ><br />
                             <small>Artista visual</small>
                           </p>
@@ -576,9 +590,9 @@
         <h1 class="subtitle" style="color: #fff">
           TRANSMISSÃO LIVE VIA FACEBOOK
         </h1>
-        <button class="button is-link is-inverted is-outlined">
+        <a class="button is-link is-inverted is-outlined">
           Assistir Agora
-        </button>
+        </a>
       </div>
     </section>
 
@@ -612,8 +626,8 @@
     <!--------------------------------- Hashtag Section --------------------------------------->
     <section class="section" style="background-color: #111">
       <div class="container pt-6 pb-6 has-text-centered">
-        <h1 class="subtitle">JOIN THE CONVERSATION</h1>
-        <h2 class="subtitle">#AfricaSoftPowerProject</h2>
+        <h1 class="subtitle" style="color: #fff;">PARTICIPE DA CONVERSA</h1>
+        <h2 class="subtitle" style="color: #fff;">#VIIDEIPP</h2>
       </div>
     </section>
 
