@@ -57,9 +57,11 @@
     >
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
+          <a class="navbar-item" style="padding: 0" href="https://bulma.io">
             <img
-              src="http://www.institutopedropires.org/pics/maquette/logo_couleurs.png"
+              style="max-height: 3rem"
+              src="images/logo.svg"
+              onerror="this.onerror=null; this.src='image.png'"
             />
           </a>
 
@@ -78,17 +80,23 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item"> Home </a>
+            <a href="/" class="navbar-item"> Home </a>
 
-            <a class="navbar-item"> About Us </a>
+            <a href="#about" class="navbar-item"> About Us </a>
 
-            <a class="navbar-item"> Speakers </a>
+            <a href="#speakers" class="navbar-item"> Speakers </a>
 
-            <a class="navbar-item"> Sessions </a>
+            <a href="#sessions" class="navbar-item"> Sessions </a>
 
-            <a class="navbar-item"> Partners </a>
+            <a href="#partners" class="navbar-item"> Partners </a>
 
-            <a class="navbar-item"> Contact </a>
+            <a
+              href="http://www.institutopedropires.org/contactos.php"
+              target="blank"
+              class="navbar-item"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </div>
@@ -128,14 +136,14 @@
             sensíveis!)?
           </h2>
           <button class="button is-link is-inverted is-outlined">
-            Join Us
+            Assistir Agora
           </button>
         </div>
       </div>
     </section>
 
     <!---------------------------------- About Us Section ------------------------------------->
-    <section class="section">
+    <section id="about" class="section">
       <div class="container pt-6 pb-6 has-text-centered">
         <h1 class="title pb-3" style="font-size: 40px; letter-spacing: -1.5px">
           About Us
@@ -210,10 +218,13 @@
     </section>
 
     <!---------------------------------- Speakers Section ------------------------------------->
-    <section class="section" style="background-color: #f1f1f1">
+    <section id="speakers" class="section" style="background-color: #f1f1f1">
       <div class="container pt-6 pb-6 has-text-centered">
         <h2 class="subtitle" style="color: #3ea2e0">Meet the</h2>
-        <h1 class="title pb-3 mb-6" style="font-size: 40px; letter-spacing: -1.5px">
+        <h1
+          class="title pb-3 mb-6"
+          style="font-size: 40px; letter-spacing: -1.5px"
+        >
           Speakers
         </h1>
         <div class="columns mt-6">
@@ -376,19 +387,185 @@
     </section>
 
     <!---------------------------------- Session Section ------------------------------------->
-    <section class="section">
-      <div class="container pt-6 pb-6 has-text-centered">
-        <h2 class="subtitle" style="color: #3ea2e0">Join a</h2>
-        <h1 class="title" style="font-size: 40px; letter-spacing: -1.5px">
+    <section id="sessions" class="section">
+      <div class="container pt-6 pb-6">
+        <h2 class="subtitle has-text-centered" style="color: #3ea2e0">
+          Join a
+        </h2>
+        <h1
+          class="title has-text-centered"
+          style="font-size: 40px; letter-spacing: -1.5px"
+        >
           Session
         </h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>,
-          like the one you're currently reading
-        </h2>
         <div class="columns">
-          <div class="column">First column</div>
-          <div class="column">Second column</div>
+          <div class="column">
+            <div>
+              <h2 class="subtitle">Dia 1 - 29 de Outubro (quinta-feira)</h2>
+              <div class="media">
+                <div class="media-left">16h00</div>
+                <div class="media-content">
+                  <div class="content">
+                    <b>Saudação de boas-vindas</b> (5 mns)
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">16h05</div>
+                <div class="media-content">
+                  <div class="content">
+                    <b>Conferência Motivacional</b> -
+                    <i
+                      >“Migração, Racismo e Identidade: contradições que importa
+                      verbalizar?”</i
+                    >
+                    (30 mns)
+                    <div>Keynote speaker:</div>
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="image is-64x64">
+                            <img
+                              class="is-rounded"
+                              src="/images/speakers/pic_beatriz_gomes.jpg"
+                            />
+                          </p>
+                        </div>
+                        <div class="level-item">
+                          <p>
+                            <strong>Pedro Pires,</strong><br/>
+                            <small>Patrono do IPP</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">16h35</div>
+                <div class="media-content">
+                  <div class="content">
+                    <b>Painel Interactivo 1</b> -
+                    <i
+                      >“O Racismo e os seus contrassensos: o desafio da
+                      descolonização das mentes”</i
+                    >
+                    - 2h00
+                    <div>Facilitador:</div>
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="image is-64x64">
+                            <img
+                              class="is-rounded"
+                              src="/images/speakers/pic_beatriz_gomes.jpg"
+                            />
+                          </p>
+                        </div>
+                        <div class="level-item">
+                          <p>
+                            <strong>Bruno Sena Martins,</strong
+                            ><br />
+                            <small
+                              >Investigador | Centro de Estudos Sociais da
+                              Universidade de Coimbra</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>Oradores:</div>
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="image is-64x64">
+                            <img
+                              class="is-rounded"
+                              src="/images/speakers/pic_beatriz_gomes.jpg"
+                            />
+                          </p>
+                        </div>
+                        <div class="level-item">
+                          <p>
+                            <strong>Beatriz Dias,</strong><br />
+                            <small
+                              >Deputada pelo Bloco de Esquerda na Assembleia da
+                              República Portuguesa</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="image is-64x64">
+                            <img
+                              class="is-rounded"
+                              src="/images/speakers/pic_beatriz_gomes.jpg"
+                            />
+                          </p>
+                        </div>
+                        <div class="level-item">
+                          <p>
+                            <strong>Mamadou Ba,</strong><br />
+                            <small
+                              >Ativista e militante anti-racista
+                              decolonial</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="image is-64x64">
+                            <img
+                              class="is-rounded"
+                              src="/images/speakers/pic_beatriz_gomes.jpg"
+                            />
+                          </p>
+                        </div>
+                        <div class="level-item">
+                          <p>
+                            <strong>Ricardo Rosa,</strong><br />
+                            <small
+                              >Activista Social e Professor Universitário |
+                              University of Massachusetts Dartmouth</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p class="image is-64x64">
+                            <img
+                              class="is-rounded"
+                              src="/images/speakers/pic_beatriz_gomes.jpg"
+                            />
+                          </p>
+                        </div>
+                        <div class="level-item">
+                          <p>
+                            <strong>César Schofield Cardoso,</strong
+                            ><br />
+                            <small>Artista visual</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h2 class="subtitle">Dia 2 - 30 de Outubro (sexta-feira)</h2>
+          </div>
         </div>
       </div>
     </section>
@@ -396,28 +573,24 @@
     <!------------------------------ Call to action LIVE Section ----------------------------->
     <section class="section" style="background-color: #041e42">
       <div class="container pt-6 pb-6 has-text-centered">
-        <h1 class="subtitle">JOIN THE CONVERSATION</h1>
-        <h2 class="subtitle">#AfricaSoftPowerProject</h2>
+        <h1 class="subtitle" style="color: #fff">
+          TRANSMISSÃO LIVE VIA FACEBOOK
+        </h1>
+        <button class="button is-link is-inverted is-outlined">
+          Assistir Agora
+        </button>
       </div>
     </section>
 
     <!-------------------------------- Partners Section --------------------------------------->
-    <section class="section">
+    <section id="partners" class="ipp-event-partners section">
       <div class="container pt-6 pb-6 has-text-centered">
         <h1 class="title" style="font-size: 40px; letter-spacing: -1.5px">
-          Partners
+          Parceiros
         </h1>
         <div class="columns">
           <div class="column">
-            <figure class="image">
-              <img
-                src="images/partners/ic_logo_ipp.svg"
-                onerror="this.onerror=null; this.src='image.png'"
-              />
-            </figure>
-          </div>
-          <div class="column">
-            <figure class="image">
+            <figure class="image" style="width: 200px; margin: 0 auto">
               <img
                 src="images/partners/ic_logo_cvt.svg"
                 onerror="this.onerror=null; this.src='image.png'"
@@ -425,7 +598,7 @@
             </figure>
           </div>
           <div class="column">
-            <figure class="image">
+            <figure class="image" style="width: 200px; margin: 0 auto">
               <img
                 src="images/partners/ic_Logo_fac.svg"
                 onerror="this.onerror=null; this.src='image.png'"
