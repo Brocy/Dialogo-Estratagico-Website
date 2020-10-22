@@ -8,19 +8,36 @@ body {
   font-weight: bold;
 }
 
-.ipp-speakers-image img {
+.ipp-speakers-image{
   width: 200px;
   height: 200px;
+  background: #e50050;
   margin: 0 auto;
   /*border-radius: 200px;*/
 }
 
-.ipp-speakers-image64x64 img {
+.ipp-speakers-image64x64 {
   width: 64px;
   height: 64px;
+  background: #e50050;
   margin: 0 auto;
   /*border-radius: 64px;*/
 }
+
+
+.ipp-speakers-image img, .ipp-speakers-image64x64  img {
+
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.ipp-speakers-image:hover img, .ipp-speakers-image64x64:hover img {
+  cursor: pointer;
+
+  opacity: .5;
+}
+
 
 section.ipp-section .title {
   font-size: 40px;
@@ -63,7 +80,7 @@ section.ipp-section .title span {
   .modal .modal-close {
     background-color: black;
   }
-  
+
   .modal .modal-content {
     width: 100%;
     max-height: calc(100vh - 0px);
