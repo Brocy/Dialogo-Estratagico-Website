@@ -15,7 +15,7 @@ body {
 .ipp-speakers-image{
   width: 200px;
   height: 200px;
-  background: #e50050;
+  background: #1e35dd;
   margin: 0 auto;
   /*border-radius: 200px;*/
 }
@@ -23,7 +23,7 @@ body {
 .ipp-speakers-image64x64 {
   width: 64px;
   height: 64px;
-  background: #e50050;
+  background: #1e35dd;
   margin: 0 auto;
   display: none;
   /*border-radius: 64px;*/
