@@ -25,6 +25,7 @@ body {
   height: 64px;
   background: #e50050;
   margin: 0 auto;
+  display: none;
   /*border-radius: 64px;*/
 }
 
