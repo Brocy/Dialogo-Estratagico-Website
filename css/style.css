@@ -13,7 +13,7 @@ body {
 }
 
 .ipp-main-banner {
-  background-image: url(../images/hero_background.png);
+  background-image: url(../images/hero_background.jpg);
   background-color: #fff;
   background-size: cover;
   -webkit-background-size: cover;
@@ -94,7 +94,7 @@ section.ipp-section .title span {
 
 @media (max-width: 600px) {
   .ipp-main-banner {
-    background-image: url(../images/hero_background_mobile.png);
+    background-image: url(../images/hero_background_mobile.jpg);
   }
 
   .ipp-main-banner .hero-body {
