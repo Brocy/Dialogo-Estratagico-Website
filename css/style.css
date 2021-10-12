@@ -1,0 +1,116 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  line-height: 1.6em;
+  font-family: "Exo 2";
+}
+
+#ipp-navbar-main .navbar-item {
+  font-weight: bold;
+}
+
+.ipp-main-banner {
+  background-image: url(../images/hero_background.jpg);
+  background-color: #fff;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.ipp-main-banner .hero-body {
+  height: calc(100vh - 76px);
+}
+
+.ipp-speakers-image {
+  width: 200px;
+  height: 200px;
+  background: #1e35dd;
+  margin: 0 auto;
+  /*border-radius: 200px;*/
+}
+
+.ipp-speakers-image64x64 {
+  width: 64px;
+  height: 64px;
+  background: #1e35dd;
+  margin: 0 auto;
+  display: none;
+  /*border-radius: 64px;*/
+}
+
+.ipp-speakers-image img,
+.ipp-speakers-image64x64 img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.ipp-speakers-image:hover img,
+.ipp-speakers-image64x64:hover img {
+  cursor: pointer;
+
+  opacity: 0.5;
+}
+
+section.ipp-section .title {
+  font-size: 40px;
+  letter-spacing: -1.5px;
+}
+
+section.ipp-section .title span {
+  border-bottom: 3px solid #e50050;
+}
+
+.ipp-event-partners figure img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+.ipp-event-partners figure img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.modal .modal-content {
+  width: 800px;
+}
+
+.modal .box {
+  border-radius: 0px;
+}
+
+.modal .box .title {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .ipp-main-banner {
+    background-image: url(../images/hero_background_mobile.jpg);
+  }
+
+  .ipp-main-banner .hero-body {
+    height: calc(100vh - 76px);
+  }
+
+  section.ipp-section .title {
+    font-size: 20px;
+  }
+
+  .modal .modal-close {
+    background-color: black;
+  }
+
+  .modal .modal-content {
+    width: 100%;
+    max-height: calc(100vh - 0px);
+  }
+}
