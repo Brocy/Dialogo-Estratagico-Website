@@ -121,10 +121,11 @@ section.ipp-section .title span {
 @media (max-width: 600px) {
   .ipp-main-banner {
     background-image: url(../images/hero_background_mobile.jpg);
+    background-position: top;
   }
 
   .ipp-main-banner .hero-body {
-    height: calc(100vh - 76px);
+    height: 80vh;
   }
 
   section.ipp-section .title {
