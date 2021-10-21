@@ -5,7 +5,7 @@ html {
 body {
   background: #fff;
   line-height: 1.6em;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .navbar {
@@ -39,7 +39,7 @@ body {
 .ipp-speakers-image {
   width: 200px;
   height: 200px;
-  background: #4281BA;
+  background: #4281ba;
   margin: 0 auto;
   /*border-radius: 200px;*/
 }
@@ -47,7 +47,7 @@ body {
 .ipp-speakers-image64x64 {
   width: 64px;
   height: 64px;
-  background: #4281BA;
+  background: #4281ba;
   margin: 0 auto;
   display: none;
   /*border-radius: 64px;*/
@@ -78,21 +78,18 @@ section.ipp-section .title {
 }
 
 section.ipp-section .title span {
-  border-bottom: 3px solid #4281BA;
+  border-bottom: 3px solid #4281ba;
 }
 
-
-.ipp-event-sessions .media .media-left{
-  font-size: 9pt; 
-  border: 1px solid #CCCCCC; 
+.ipp-event-sessions .media .media-left {
+  font-size: 9pt;
+  border: 1px solid #cccccc;
   padding: 4px;
 }
 
-.ipp-event-sessions .media .media-left div:first-child{
-  border-bottom: 1px solid #CCCCCC;
+.ipp-event-sessions .media .media-left div:first-child {
+  border-bottom: 1px solid #cccccc;
 }
-
-
 
 .ipp-event-partners figure img {
   filter: gray; /* IE6-9 */
@@ -125,7 +122,11 @@ section.ipp-section .title span {
   }
 
   .ipp-main-banner .hero-body {
-    height: 80vh;
+    height: 70vh;
+  }
+
+  #about {
+    padding-top: 0;
   }
 
   section.ipp-section .title {
