@@ -83,7 +83,7 @@ section.ipp-section .title span {
 
 .ipp-event-sessions .media .media-left {
   font-size: 9pt;
-  border: 1px solid #cccccc;
+  /*border: 1px solid #cccccc;*/
   padding: 0 4px;
 }
 
