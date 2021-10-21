@@ -8,17 +8,25 @@ body {
   font-family: "Exo 2";
 }
 
+.navbar {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f9fafb;
+  box-shadow: 0 0 12px 3px rgb(0 0 0 / 20%);
+}
+
 #ipp-navbar-main .navbar-item {
   font-weight: bold;
 }
 
 .ipp-main-banner {
+  margin-top: 15px;
   background-image: url(../images/hero_background.jpg);
   background-color: #fff;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -31,7 +39,7 @@ body {
 .ipp-speakers-image {
   width: 200px;
   height: 200px;
-  background: #1e35dd;
+  background: #4281BA;
   margin: 0 auto;
   /*border-radius: 200px;*/
 }
@@ -39,7 +47,7 @@ body {
 .ipp-speakers-image64x64 {
   width: 64px;
   height: 64px;
-  background: #1e35dd;
+  background: #4281BA;
   margin: 0 auto;
   display: none;
   /*border-radius: 64px;*/
@@ -47,6 +55,9 @@ body {
 
 .ipp-speakers-image img,
 .ipp-speakers-image64x64 img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -55,8 +66,10 @@ body {
 .ipp-speakers-image:hover img,
 .ipp-speakers-image64x64:hover img {
   cursor: pointer;
-
   opacity: 0.5;
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(o);
 }
 
 section.ipp-section .title {
@@ -65,8 +78,21 @@ section.ipp-section .title {
 }
 
 section.ipp-section .title span {
-  border-bottom: 3px solid #e50050;
+  border-bottom: 3px solid #4281BA;
 }
+
+
+.ipp-event-sessions .media .media-left{
+  font-size: 9pt; 
+  border: 1px solid #CCCCCC; 
+  padding: 4px;
+}
+
+.ipp-event-sessions .media .media-left div:first-child{
+  border-bottom: 1px solid #CCCCCC;
+}
+
+
 
 .ipp-event-partners figure img {
   filter: gray; /* IE6-9 */
