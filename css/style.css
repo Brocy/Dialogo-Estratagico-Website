@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background: #fff;
   line-height: 1.6em;
   font-family: "PT Sans", sans-serif;
 }
@@ -80,14 +79,20 @@ body {
 }
 
 section.ipp-section .title {
-  font-size: 40px;
+  font-size: 46px;
   letter-spacing: -1.5px;
   color: #010302;
+  background-image: linear-gradient(to  left, #CBA31B, #249A70);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-section.ipp-section .title span {
-  border-bottom: 3px solid #249A70;
-}
+/*section.ipp-section .title span {
+   border-bottom: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #249A70, #CBA31B);
+}*/
 
 .ipp-event-sessions .media .media-left {
   font-size: 9pt;
@@ -177,4 +182,36 @@ section.ipp-section .title span {
   outline: var(--b) solid var(--c);
   outline-offset: calc(var(--s)/-2);
   --_i: calc(100% - 2*var(--s));
+}
+
+/* live background animation */
+
+.ipp-live {
+	background: linear-gradient(-45deg, #CBA31B, #249A70, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient{
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
