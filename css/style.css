@@ -22,6 +22,10 @@ body {
   box-shadow: 0 0 12px 3px rgb(0 0 0 / 20%);
 }
 
+#about .subtitle{
+  font-size: 1.10rem;
+}
+
 #ipp-navbar-main .navbar-item {
   font-weight: bold;
 }
