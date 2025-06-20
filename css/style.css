@@ -31,6 +31,7 @@ body {
 }
 
 .ipp-main-banner {
+  width: 100%;
   margin-top: 15px;
   background-image: url(../images/hero_background.webp);
   background-color: #fff;
@@ -44,7 +45,7 @@ body {
 }
 
 .ipp-main-banner .hero-body {
-  height: calc(100vh - 76px);
+  height: calc(100vh - 166px);
 }
 
 .ipp-speakers-image {
@@ -67,7 +68,7 @@ body {
   bottom: -10px;  /* Adjust the size of the border */
   border-radius: 50%;
   z-index: -1;
-  background: linear-gradient(to  left, #e9d022, #e60b09); /* Customize your gradient here */
+  background: linear-gradient(to  left, #23d5ab, #0173ff); /* Customize your gradient here */
   opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease; /* Smooth transition for the border */
 }
@@ -103,14 +104,14 @@ body {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   border: 5px solid transparent;
-  border-image:  linear-gradient(to  left, #e9d022, #e60b09) 1 stretch;
+  border-image:  linear-gradient(to  left, #23d5ab, #0173ff) 1 stretch;
 }
 
 section.ipp-section .title {
   font-size: 46px;
   letter-spacing: -1.5px;
   color: #010302;
-  background-image: linear-gradient(to  left, #e9d022, #e60b09);
+  background-image: linear-gradient(to  left, #23d5ab, #0173ff);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
